@@ -111,8 +111,6 @@ sonarqube {
         property "sonar.sources", "src/main/java"
         property "sonar.exclusions", "**/*Generated.java"
         property "sonar.scm.disabled", "true"
-        property "sonar.login", "605c8de3a61c467b37396e734d7f503619927f20"
-        //property "sonar.password", "Chintank@16"
-        //605c8de3a61c467b37396e734d7f503619927f20
-    }
+        property "sonar.login", "YOUR-TOKEN"
+        }
 }
