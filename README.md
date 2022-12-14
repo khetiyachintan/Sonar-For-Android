@@ -75,3 +75,5 @@ Set Environment Path:
 ```
 
 Note: [Original Source Code Credit](https://github.com/hieuwu/android-groceries-store) Only SonarQube Integration has added here. 
+
+Thank you!
