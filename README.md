@@ -6,45 +6,45 @@ Groceries Store is a project to help people order grocery online. The main purpo
 ## Sonar Server Configuration: (For Windowns, Check offical document for the othre OS)
 
 #Step1
-1. Download and install Java 11 on your system.
-2. Download the SonarQube Community Edition zip file
-3. Download the SonarScanners (Code Analyzer)
-4. Download the Flutter Plug-In (For Flutter Only)
+```1. Download and install Java 11 on your system.
+```2. Download the SonarQube Community Edition zip file
+```3. Download the SonarScanners (Code Analyzer)
+```4. Download the Flutter Plug-In (For Flutter Only)
 
 #Step2
 Set Environment Path:
-1. JDK ==> ..\SonarLocal\jdk-11.0.17+8\bin
-2. Sonarqube ==> ..\SonarLocal\sonarqube-8.9.10.61524\bin\windows-x86-64
-3. Sonarscanner ==> ..\SonarLocal\sonar-scanner-4.7.0.2747-windows\bin
+```1. JDK ==> ..\SonarLocal\jdk-11.0.17+8\bin
+```2. Sonarqube ==> ..\SonarLocal\sonarqube-8.9.10.61524\bin\windows-x86-64
+```3. Sonarscanner ==> ..\SonarLocal\sonar-scanner-4.7.0.2747-windows\bin
 
 #Step3
-1. Open wrapper.conf ==> (File Path ..\SonarLocal\sonarqube-8.9.10.61524\conf\)
-2. Update wrapper.java.command=../SonarLocal/jdk-11.0.17+8/bin/java
+```1. Open wrapper.conf ==> (File Path ..\SonarLocal\sonarqube-8.9.10.61524\conf\)
+```2. Update wrapper.java.command=../SonarLocal/jdk-11.0.17+8/bin/java
 
 #Step4 (This is very important)
-1. Open command line
-2. CD ..\SonarLocal\sonarqube-8.9.10.61524\bin\windows-x86-64
-3. Type ==> startsonar
-4. Hit http://localhost:9000/ or your server URL where you setup sonar
+```1. Open command line
+```2. CD ..\SonarLocal\sonarqube-8.9.10.61524\bin\windows-x86-64
+```3. Type ==> startsonar
+```4. Hit http://localhost:9000/ or your server URL where you setup sonar
 
 ## Android Configuration
 
-1. Root gradle, add url
+1. `Root gradle, add url
    repositories {
    google()
    maven {
    ...
    url = uri("https://plugins.gradle.org/m2/")
    }
-   }
+   }`
 
-2. App gradle
+2. `App gradle
    plugins {
    ...
    id "org.sonarqube" version "3.2.0"
-   }
+   }`
 
-3. Sonar Script
+3. `Sonar Script
    sonarqube {
    properties {
    property "sonar.host.url", "http://localhost:9000/" // Default or your server URL
@@ -59,9 +59,9 @@ Set Environment Path:
    property "sonar.sourceEncoding", "UTF-8"
    property "sonar.login", "<TOKEN>"
    }
-   }
+   }`
 
-4. Clean your project (Clearing your cache)
-   ./gradlew sonarqube  
+4. `Clean your project (Clearing your cache)
+   ./gradlew sonarqube`  
 
-Note: Original Source Code Credit - https://github.com/hieuwu/android-groceries-store. Only SonarQube Integration has added here. 
+Note: [Original Source Code Credit] (https://github.com/hieuwu/android-groceries-store) Only SonarQube Integration has added here. 
