@@ -72,5 +72,6 @@ Set Environment Path:
 
 4. Clean your project (Clearing your cache)
    ./gradlew sonarqube
+```
 
 Note: [Original Source Code Credit] (https://github.com/hieuwu/android-groceries-store) Only SonarQube Integration has added here. 
