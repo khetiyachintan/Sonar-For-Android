@@ -47,13 +47,13 @@ Set Environment Path:
    }
    }
 
-2. `App gradle
+2. App gradle
    plugins {
    ...
    id "org.sonarqube" version "3.2.0"
-   }`
+   }
 
-3. `Sonar Script
+3. Sonar Script
    sonarqube {
    properties {
    property "sonar.host.url", "http://localhost:9000/" // Default or your server URL
@@ -68,9 +68,9 @@ Set Environment Path:
    property "sonar.sourceEncoding", "UTF-8"
    property "sonar.login", "<TOKEN>"
    }
-   }`
+   }
 
-4. `Clean your project (Clearing your cache)
-   ./gradlew sonarqube`  
+4. Clean your project (Clearing your cache)
+   ./gradlew sonarqube
 
 Note: [Original Source Code Credit] (https://github.com/hieuwu/android-groceries-store) Only SonarQube Integration has added here. 
