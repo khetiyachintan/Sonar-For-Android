@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Groceries Store</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="get_started">Get Started</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="shop">Shop</string>
+    <string name="explore">Explore</string>
+    <string name="favourite">Favourite</string>
+    <string name="profile">Profile</string>
+    <string name="add_to_basket">Add to Basket</string>
+    <string name="nutritions">Nutrition</string>
+    <string name="description">Description</string>
+    <string name="reviews">Reviews</string>
+    <string name="welcome_prompt">Hello, new grocery and gourmet foods just arrived !</string>
+    <string name="exclusive_offer">Exclusive Offer</string>
+    <string name="see_all">See all</string>
+    <string name="best_selling">Best Selling</string>
+    <string name="recommended">Recommended</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="cart">Cart</string>
+    <string name="line_item_image">Line Item image</string>
+    <string name="fab">Fab</string>
+    <string name="my_basket">My Basket</string>
+    <string name="check_out">Go to Check Out</string>
+    <string name="delivery">Delivery</string>
+    <string name="edit">Edit</string>
+    <string name="payment_method">Payment method</string>
+    <string name="receiver">Receiver</string>
+    <string name="address">Address</string>
+    <string name="phone_number">Phone number</string>
+    <string name="update">Update</string>
+    <string name="confirm_order">Confirm order</string>
+    <string name="total">Total:</string>
+    <string name="shipping_fee">Shipping fee:</string>
+    <string name="sign_out">Sign out</string>
+    <string name="sync_success">PRODUCT_SYNC_SUCCESS</string>
+    <string name="sync_status_pref_name">SYNC_PREF_NAME</string>
+    <string name="profile_information">Profile Information</string>
+    <string name="order_history">Order History</string>
+    <string name="order_is_created_successfully">Order is created successfully !</string>
+    <string name="continue_shopping">Continue Shopping</string>
+    <string name="your_cart_is_empty">Your cart is empty</string>
+    <string name="authentication_failed">Authentication failed.</string>
+    <string name="authentication_successfully">Authentication successfully.</string>
+    <string name="ok_thank_you">Ok, thank you</string>
+    <string name="your_items_has_been_placed_and_is_on_n_the_way_to_be_processed">Your items has been placed and is on\n the way to be processed</string>
+    <string name="your_order_has_been_accepted">Your order has been accepted</string>
+    <string name="order_created_failed">Order created failed :(</string>
+    <string name="order_success_dialog">SUCCESS_DIALOG</string>
+    <string name="update_profile_successfully">Update profile successfully!</string>
+    <string name="update_profile_failed">Update profile failed!</string>
+    <string name="notification_settings">Notification settings</string>
+    <string name="notifications">Notifications</string>
+    <string name="show_when_order_created">Show when order created</string>
+    <string name="show_when_promotion_sent">Show when promotion sent</string>
+    <string name="show_when_app_data_is_refreshed">Show when app data refreshed</string>
+
+<!--    Notification constant-->
+    <string name="order_created_notification_channel_id" translatable="false">order_created_channel</string>
+    <string name="order_created_notification_channel_name" translatable="true">Order created</string>
+
+    <string name="database_synced_notification_channel_id" translatable="false">database_synced_channel</string>
+    <string name="database_synced_notification_channel_name" translatable="true">Database synced</string>
+
+    <string name="promotion_sent_notification_channel_id" translatable="false">promotion_sent_channel</string>
+    <string name="promotion_sent_notification_channel_name" translatable="true">Promotion sent</string>
+    <string name="notification_title">Groceries Store</string>
+    <string name="delete">Delete</string>
+</resources>

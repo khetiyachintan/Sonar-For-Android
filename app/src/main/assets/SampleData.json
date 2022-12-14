@@ -1,0 +1,82 @@
+{
+  "data": [
+    {
+      "id": "9d113edf-c131-4a88-ba42-f11b62e63ade",
+      "type": "inventory_stock",
+      "attributes": {
+        "stock_group_id": "a1d83d06-c503-472c-aae7-615ad51e819c",
+        "external_source_id": "afb02bf7-4e00-49f0-96fb-02ffd5b06a9f",
+        "external_source_type": "Catalog::ProductVariant",
+        "name": "Lamb Shank",
+        "sku": "M006",
+        "cost_price": "100.0",
+        "supplier_id": "21850ba4-5d08-44e4-8a5f-e96e78956b54",
+        "base_price": "59.0",
+        "status": "active",
+        "stock_id": "9d113edf-c131-4a88-ba42-f11b62e63ade",
+        "stock_name": "Lamb Shank",
+        "stock_sku": "M006",
+        "supplier_code": "-",
+        "supplier_note": null,
+        "stock_quantity": "1822.0",
+        "reorder_quantity": "0.0",
+        "max_reorder_quantity": "1.0",
+        "created_at": "2020-04-24T04:35:11Z",
+        "updated_at": "2021-10-18T07:03:59Z",
+        "deleted_at": null
+      },
+      "relationships": {
+        "stock_group": {
+          "data": {
+            "id": "a1d83d06-c503-472c-aae7-615ad51e819c",
+            "type": "inventory_stock_group"
+          }
+        }
+      }
+    }
+  ],
+  "included": [
+    {
+      "id": "c50bf7e1-ea38-451f-b2fa-d654820fe4b4",
+      "type": "inventory_stock_composite",
+      "attributes": {
+        "stock_group_id": "a1d83d06-c503-472c-aae7-615ad51e819c",
+        "stock_id": "6d9d9e8b-0d7e-4e50-8466-1fff3f02517a",
+        "quantity": "4.0",
+        "stock_name": "S - Lamb Shank (PKT)"
+      }
+    },
+    {
+      "id": "a1d83d06-c503-472c-aae7-615ad51e819c",
+      "type": "inventory_stock_group",
+      "attributes": {
+        "external_source_id": "092a3c94-11fa-4c7d-8be6-5bc0d9ca5668",
+        "external_source_type": "Catalog::Product",
+        "unit_of_measure": "unit",
+        "category_id": "df6638e1-394c-4f11-bb28-a8d130f005ab",
+        "created_at": "2020-04-24T04:35:11Z",
+        "updated_at": "2020-04-24T04:35:11Z"
+      },
+      "relationships": {
+        "stock_composites": {
+          "data": [
+            {
+              "id": "c50bf7e1-ea38-451f-b2fa-d654820fe4b4",
+              "type": "inventory_stock_composite"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "meta": {
+    "total_pages": 1
+  },
+  "links": {
+    "self": "https://masterchippysg.livedevs.com/api/inventory/stock_scan?barcode=M006&sku=M006",
+    "first": "https://masterchippysg.livedevs.com/api/inventory/stock_scan?barcode=M006&page=1&sku=M006",
+    "prev": "https://masterchippysg.livedevs.com/api/inventory/stock_scan?barcode=M006&page=1&sku=M006",
+    "next": "https://masterchippysg.livedevs.com/api/inventory/stock_scan?barcode=M006&page=1&sku=M006",
+    "last": "https://masterchippysg.livedevs.com/api/inventory/stock_scan?barcode=M006&page=1&sku=M006"
+  }
+}

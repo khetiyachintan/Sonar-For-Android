@@ -1,0 +1,118 @@
+import org.jlleitschuh.gradle.ktlint.reporter.ReporterType
+
+plugins {
+    alias libs.plugins.kotlin.android
+    alias libs.plugins.kotlin.kapt
+    alias libs.plugins.android.application
+    alias libs.plugins.ktlint.gradle
+    alias libs.plugins.hilt.android
+    alias libs.plugins.gms
+    alias libs.plugins.spotless
+    alias libs.plugins.navigation.safeargs
+    id "org.sonarqube" version "3.2.0"
+
+}
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 31
+    buildToolsVersion "31.0.0"
+
+    defaultConfig {
+        applicationId "com.hieuwu.groceriesstore"
+        minSdkVersion 22
+        targetSdkVersion 30
+        versionCode 5
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_11.toString()
+    }
+
+    buildFeatures {
+        dataBinding true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation libs.bundles.androidx
+    implementation libs.bundles.android.ui
+
+    implementation libs.kotlin.stdlib
+
+    implementation libs.legacy.support.v4
+    implementation libs.rxjava
+
+    implementation libs.timber
+
+    implementation libs.bundles.room
+    kapt libs.room.compiler
+
+    implementation libs.hilt
+    kapt libs.hilt.compiler
+
+    implementation libs.glide
+    annotationProcessor libs.glide.compiler
+    implementation libs.lottie
+
+    implementation libs.bundles.retrofit
+    implementation libs.gson
+    implementation libs.moshi
+    implementation libs.kotlin.coroutines.play.services
+
+    implementation platform(libs.firebase.bom)
+    implementation libs.bundles.firebase
+
+    implementation libs.caruilib
+
+    testImplementation libs.junit
+    androidTestImplementation libs.androidx.test.runner
+    androidTestImplementation libs.androidx.test.arch.core
+}
+
+task wrapper(type: Wrapper){
+    gradleVersion = '7.2'
+}
+
+ktlint {
+    android.set(true)
+    reporters {
+        reporter(ReporterType.PLAIN)
+        reporter(ReporterType.HTML)
+    }
+}
+
+sonarqube {
+    properties {
+        property "sonar.host.url", "http://localhost:9000/"
+        property "sonar.projectKey", "SonarForAndroid"
+        property "sonar.projectName", "SonarForAndroid"
+        property "sonar.projectVersion", 1.0
+        property "sonar.sourceEncoding", "UTF-8"
+        property "sonar.java.source", "1.8"
+        property "sonar.language", "java"
+        property "sonar.sources", "src/main/java"
+        property "sonar.exclusions", "**/*Generated.java"
+        property "sonar.scm.disabled", "true"
+        property "sonar.login", "605c8de3a61c467b37396e734d7f503619927f20"
+        //property "sonar.password", "Chintank@16"
+        //605c8de3a61c467b37396e734d7f503619927f20
+    }
+}

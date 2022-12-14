@@ -1,0 +1,30 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+    }
+}
+
+plugins {
+    alias libs.plugins.spotless apply false
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url = uri("https://plugins.gradle.org/m2/")
+        }
+    }
+}
+
+subprojects {
+    afterEvaluate { project ->
+        project.apply from: '../spotless.gradle'
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
