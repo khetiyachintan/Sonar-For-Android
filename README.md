@@ -1,7 +1,7 @@
 <h1 align="center"> 🚀 Groceries Store - Sample for the SonarQube</h1>
 
 ## About
-Groceries Store is a project to help people order grocery online. The main purpose of this project is to demonstrate modern Android development skills in real production environment, reduce the learning curve when jump into Android development world.
+Groceries Store is a project to help people order grocery online. The main purpose of this project is to demonstrate modern Android development skills in real production environment, reduce the learning curve when jump into Android development world and integrate the SonarQube.
 
 ## Sonar Server Configuration: (For Windowns, Check offical document for the othre OS)
 
